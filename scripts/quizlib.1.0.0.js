@@ -54,7 +54,7 @@ var Quiz = function(quizContainer, answers) {
 	 * @type String
 	 * @default 'Unanswered Question!'
 	 */
-	this.unansweredQuestionText = 'Unanswered Question!';
+	this.unansweredQuestionText = 'Cevaplanmayan soru!';
 
 	// Quiz container element
 	this.container = document.getElementById(quizContainer);
@@ -82,7 +82,7 @@ var Quiz = function(quizContainer, answers) {
 	}
 
 	if (this.answers.length != this.questions.length) {
-		throw new Error("Number of answers does not match number of questions!");
+		throw new Error("Cevap sayısı istenilenden fazla.Lütfen tekrar okuyun!");
 	}
 };
 
